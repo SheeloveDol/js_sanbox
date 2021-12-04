@@ -77,7 +77,7 @@
 
 
 let count = 0;
-const newString = 'Everybody Loves Raymond';
+const newString = 'What is going on';
 
 const array = newString.split('');
 // console.log(array)
@@ -87,9 +87,12 @@ const leftOver = []
 for (let i = 0; i < spaces.length; i++) {
   if (spaces[i] === spaces[i+1]) {
     count += 1;
+    console.log(`removing all ${spaces[i]}'s`)
     spaces = spaces.filter(l => l !== spaces[i])
   }
   
   console.log(spaces)
   console.log(count)
 }
+
+console.log('h' == 'h')
