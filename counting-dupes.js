@@ -77,20 +77,19 @@
 
 
 let count = 0;
-const newString = 'Hope i am not too late here';
+const newString = 'Everybody Loves Raymond';
 
 const array = newString.split('');
 // console.log(array)
-const spaces = array.filter(a => a !== ' ').map(b => b.toLowerCase()).sort()
+let spaces = array.filter(a => a !== ' ').map(b => b.toLowerCase()).sort()
 console.log(spaces)
 const leftOver = []
 for (let i = 0; i < spaces.length; i++) {
-  if (spaces[i] === spaces[i + 1]) {
+  if (spaces[i] === spaces[i+1]) {
     count += 1;
-    spaces.filter(l => l === spaces[i])
-    
+    spaces = spaces.filter(l => l !== spaces[i])
   }
   
   console.log(spaces)
-  // console.log(count)
+  console.log(count)
 }
