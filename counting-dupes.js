@@ -96,3 +96,5 @@ for (let i = 0; i < spaces.length; i++) {
 }
 
 console.log('h' == 'h')
+
+// Found out that it didn't need some of the implemented features, but missing some key ones at the same time...
