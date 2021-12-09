@@ -77,7 +77,7 @@
 
 
 let count = 0;
-const newString = 'What is going on';
+const newString = 'zzbbddeeffiijoouu';
 
 const array = newString.split('');
 // console.log(array)
@@ -92,8 +92,10 @@ for (let i = 0; i < spaces.length; i++) {
   }
   
   console.log(spaces)
-  console.log(count)
+  
 }
+
+console.log(count)
 
 console.log('h' == 'h')
 
