@@ -5,10 +5,10 @@
 // unique_in_order('ABBCcAD') --> ['A', 'B', 'C', 'c', 'A', 'D'];
 // unique_in_order(1,2,2,3,3) --> [1, 2, 3]
 
-function unique_in_order(string) {
-  let transform = string.split().filter((item, pos, arr) => {
-    return arr.indexOf(item) == pos;
-  }
-}
+// function unique_in_order(string) {
+//   let transform = string.split().filter((item, pos, arr) => {
+//     return arr.indexOf(item) == pos;
+//   }
+// }
 
 console.log(unique_in_order('AABBBCCCDDDdFF'))
