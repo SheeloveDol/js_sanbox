@@ -8,12 +8,24 @@ The input will always be valid (numbers will be an array of length 2 or greater,
 
 // create an empty function with 2 params
 
+let numbers = [1, 4, 6, 9, 13, 15, 16]
+
 function twoSum(arr, target) {
-  
+
+  //filter out all items from arr greater than target
+  let newArr = arr.filter(item => item < target);
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr.includes((target - arr[i]))) {
+      return
+    }
+  }
+
 }
 
 
 // iterate through the array and to find which two items add up to the target number
+/* if numbers.includes(target - numbers[i]) -   */
 
 
 // return the indices of these two items
