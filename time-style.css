@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  width: 80vw;
+  margin: 5rem auto;
+  outline: 1px solid red;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2 1fr;
+  gap: 1rem;
+  
+}
+
+.profile {
+  grid-row: 1 / 3;
+  background-color: green;
+}
+
+.activity {
+  min-width: 1em;
+}
+
+.work {
+  background-color: orange;
+}
+
+.play {
+  background-color: lightblue;
+}
+
+.study {
+  background-color: lightcoral;
+}
+
+.exercise {
+  background-color: rgb(48, 48, 175);
+}
+
+.social {
+  background-color: purple;
+}
+
+.selfcare {
+  background-color: yellow;
+}

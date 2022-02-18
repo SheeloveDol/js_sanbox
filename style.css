@@ -1,0 +1,35 @@
+* {
+  box-sizing: border box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  outline: 1px solid red;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  outline: 1px solid blue;
+  width: 80vw;
+  background-color: green;
+  border-radius: 15px;
+  height: 80vh;
+  
+}
+
+.box {
+  /* padding: 1rem; */
+  text-align: center;
+}
+
+.box-a {
+  border-radius: 15px;
+  background-color: purple;
+
+}
+
+/* .box-b {
+  background-color: gold;
+} */
