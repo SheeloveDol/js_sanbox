@@ -29,6 +29,6 @@ const wave = str =>
 
     console.log(wave(word))
 
-
+    console.log(wave('hello'))  
 
     let arr;
