@@ -8,3 +8,5 @@ function findMultiples(integer, limit) {
 }
 
 console.log(findMultiples(5, 20));
+console.log(findMultiples(5, 200));
+console.log(findMultiples(3, 27))
