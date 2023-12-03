@@ -8,6 +8,7 @@ function reverseWords(str){
 }
 
 console.log(reverseWords('I want to be great'));
+console.log(reverseWords('i love to eat bread and peanut butter'))
 
 
 // IMPORTANT to note that using .reverse() permanently mutates the array we get from splitting the string. 
