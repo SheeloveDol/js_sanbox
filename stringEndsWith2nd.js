@@ -1,19 +1,19 @@
 const stringEndsWith2nd = (str, ending) => {
-  let sliceFromStr = [...str].slice(-2);
+  let sliceFromStr = [...str].slice(- ending.length);
   let arrayFromStr = [...sliceFromStr];
   let arrFromEnding = [...ending];
   console.log(arrayFromStr);
 
-  if (arrayFromStr.length !==  arrFromEnding.length) return 'false';
+  if (arrayFromStr.length !==  arrFromEnding.length) return false;
 
   for (let i = 0; i < arrayFromStr.length; i++) {
     if (arrayFromStr[i] !== arrFromEnding[i]) {
-        return 'false';
+        return false;
     };
     
   }
 
-  return 'true'
+  return true
   ;
 }
 
