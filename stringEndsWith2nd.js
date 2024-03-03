@@ -7,11 +7,13 @@ console.log(arrayFromStr);
 // if (arrayFromStr.length !==  arrFromEnding.length) return false;
 if (ending === '' && str !== '') {
     return true;
-  } else if
+  } else if (str.length < ending.length) { 
+    return false;
+  }
 
 for (let i = 0; i < arrayFromStr.length; i++) {
     if (arrayFromStr[i] !== arrFromEnding[i]) {
-        console.log(arrayFromStr[i], arrFromEnding[i]);
+    
             return false;
     };
     
@@ -22,7 +24,7 @@ for (let i = 0; i < arrayFromStr.length; i++) {
 }
 
 
-console.log(stringEndsWith2nd('good', '')) // abc
+console.log(stringEndsWith2nd('good', 'ogood')) // abc
 
 
 
