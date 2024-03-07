@@ -13,10 +13,12 @@ if (ending === '' && str !== '') {
 
 for (let i = 0; i < arrayFromStr.length; i++) {
     if (arrayFromStr[i] !== arrFromEnding[i]) {
-    
+        console.log(arrayFromStr[i], arrFromEnding[i])
             return false;
     };
     
+
+
     return true;
 }
 
