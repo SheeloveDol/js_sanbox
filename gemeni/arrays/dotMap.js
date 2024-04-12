@@ -4,7 +4,7 @@ const numbers = [10, 20, 30, 40, 50];
 const newNumbersArray = numbers.map((number) => number + 5); // [15, 25, 35, 45, 55]
 
 console.log(newNumbersArray);
-console.log('');
+console.log("");
 
 //You have an array mixedItems with numbers and strings. Use .filter() to create a new array containing only the numbers.
 
@@ -15,7 +15,7 @@ const arrayOfNumbersOnly = mixedItems.filter(
 );
 
 console.log(`An exclusive list of numbers: ${arrayOfNumbersOnly}`); // [6, 7, 8, 9]
-console.log('');
+console.log("");
 
 //Imagine an array scores representing test scores. Use .reduce() to calculate the class average.
 
@@ -29,7 +29,7 @@ const averageScore = scores
   .reduce((total, score) => total + score / scores.length, 0);
 
 console.log(`The average score is: ${averageScore}`); // 81.7
-console.log('');
+console.log("");
 
 /* 
 Let's say you have an array of objects, each representing a person:
@@ -86,8 +86,7 @@ for (person of legalDrinkers) {
 }
 
 console.log(legalDrinkers);
-console.log('');
-
+console.log("");
 
 /* 
 Merging Sorted Arrays
@@ -114,48 +113,48 @@ const array3 = [23, 27, 29, 32];
 const array4 = [21, 24, 28, 36, 40, 45, 48];
 
 const mergeSortedArraysMe = (arr1, arr2) => {
-    let mergedArrays = [];
-    for (let i = 0; i < array1.length; i++) {
-        for (let j = 0; j < array2.length; j++) {
-        }
-        if (array1[i] < array2[i]) {
-            mergedArrays.push(array1[i], array2[i]);
-        }else if (array1[i] > array2[i]) {
-            mergedArrays.push(array2[i], array1[i]);
-        }
+  let mergedArrays = [];
+  for (let i = 0; i < array1.length; i++) {
+    for (let j = 0; j < array2.length; j++) {}
+    if (array1[i] < array2[i]) {
+      mergedArrays.push(array1[i], array2[i]);
+    } else if (array1[i] > array2[i]) {
+      mergedArrays.push(array2[i], array1[i]);
     }
-    return mergedArrays;
+  }
+  return mergedArrays;
 };
 
 console.log(mergeSortedArraysMe(array1, array2));
 
-
-
 // ---------Better solution: ------------
 
 function mergeSortedArrays(arr1, arr2) {
-    const mergedArray = [];
-    let i = 0; // Pointer for arr1
-    let j = 0; // Pointer for arr2
-  
-    // Iterate while either array still has elements
-    while (i < arr1.length || j < arr2.length) {
-      if (i === arr1.length) { // arr1 has been exhausted
-        mergedArray.push(arr2[j]);
-        j++;
-      } else if (j === arr2.length) {  // arr2 has been exhausted 
-        mergedArray.push(arr1[i]);
-        i++;
-      } else if (arr1[i] < arr2[j]) { 
-        mergedArray.push(arr1[i]);
-        i++;
-      } else { 
-        mergedArray.push(arr2[j]);
-        j++;
-      }
+  const mergedArray = [];
+  let i = 0; // Pointer for arr1
+  let j = 0; // Pointer for arr2
+
+  // Iterate while either array still has elements
+  while (i < arr1.length || j < arr2.length) {
+    if (i === arr1.length) {
+      // arr1 has been exhausted
+      mergedArray.push(arr2[j]);
+      j++;
+    } else if (j === arr2.length) {
+      // arr2 has been exhausted
+      mergedArray.push(arr1[i]);
+      i++;
+    } else if (arr1[i] < arr2[j]) {
+      mergedArray.push(arr1[i]);
+      i++;
+    } else {
+      mergedArray.push(arr2[j]);
+      j++;
     }
-  
-    return mergedArray;
   }
 
-  console.log(mergeSortedArrays(array3, array4))
+  return mergedArray;
+}
+
+console.log(mergeSortedArrays(array3, array4));
+console.log("");
