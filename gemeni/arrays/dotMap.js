@@ -158,3 +158,6 @@ function mergeSortedArrays(arr1, arr2) {
 
 console.log(mergeSortedArrays(array3, array4));
 console.log("");
+console.log("");
+console.log("");
+
